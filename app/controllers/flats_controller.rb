@@ -37,6 +37,7 @@ class FlatsController < ApplicationController
 
   def destroy
     @flat.destroy
+    redirect_to flats_path
   end
 
   private
@@ -46,6 +47,6 @@ class FlatsController < ApplicationController
   end
 
   def flat_params
-    params.require(:flat).permit(:name, :address, :description, :price_per_night, :number_of_guests)
+    params.require(:flat).permit(:name, :address, :description, :price_per_night, :number_of_guests, :photo_url)
   end
 end

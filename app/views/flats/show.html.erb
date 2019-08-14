@@ -1,4 +1,20 @@
-<div class="container">
+<div class="banner no_bottom_margin">
+  <%= link_to "Simple Airbnb", flats_path, class: "brand_logo"%>
+  <div class="banner_right">
+    <form action="#" class="form-inline">
+      <div class="form-group">
+        <input type="text" class="form-control mr-2" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-success mr-2 search">Search</button>
+    </form>
+    <%= link_to "Add Flat", new_flat_path, class: "btn btn-primary add-flat" %>
+  </div>
+</div>
+
+<div class="banner_image" style="background-image: url('<%= @flat.photo_url %>')">
+</div>
+
+<div class="container box-position">
   <div class="content">
     <div class="content_left mr-3">
       <div class="title_box">
@@ -18,14 +34,14 @@
         <form action="#">
           <div class="form-group">
             <div class="input-group-prepend">
-              <div class="input-group-text">From:</div>
-              <input type="from" class="form-control" id="from" placeholder="12/10/2017">
+              <div class="input-group-text mr-0 border-right-0 right_radius_none">From:</div>
+              <input type="text" class="form-control ml-0 left_radius_none" id="from" placeholder="12/10/2017">
             </div>
           </div>
           <div class="form-group">
             <div class="input-group-prepend">
-              <div class="input-group-text">To:</div>
-              <input type="to" class="form-control" id="to" placeholder="18/10/2017">
+              <div class="input-group-text mr-0 border-right-0 right_radius_none">To:</div>
+              <input type="text" class="form-control ml-0 left_radius_none" id="to" placeholder="18/10/2017">
             </div>
           </div>
           <button type="submit" class="btn btn-success form-control">Book</button>
@@ -52,8 +68,7 @@
       </div>
     </div>
   </div>
-
-  <%= link_to "Back to All Flats", flats_path, class: "btn btn-success mt-5" %>
 </div>
+
 
 

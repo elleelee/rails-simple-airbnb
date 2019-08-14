@@ -4,9 +4,9 @@ body {
 }
 
 .cards {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
 .card {
@@ -96,4 +96,76 @@ body {
   background-color: transparent;
 }
 
+.right_radius_none {
+  border-radius: 5px 0px 0px 5px;
+}
 
+.left_radius_none {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F8F9FA;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.no_bottom_margin {
+  margin-bottom: 0px;
+}
+
+.banner_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand_logo {
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: black;
+}
+
+.brand_logo:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.add-flat {
+  color: #036CE7;
+  background-color: transparent;
+}
+
+.search {
+  color: #58BC74;
+  background-color: transparent;
+}
+
+.form_styling {
+  background-color: #F8F9FA;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card img {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner_image {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.box-position {
+  margin-top: 0px;
+  position: absolute;
+  bottom: -240px;
+  left: 140px;
+}
